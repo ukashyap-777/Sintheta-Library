@@ -1,7 +1,8 @@
+/* eslint-disable jsx-a11y/iframe-has-title */
 import { useState } from "react";
-import emailjs from "emailjs-com";
 import React from "react";
 import PhoneInput from "react-phone-input-2";
+import { sendEmail } from "../utils/sendEmail";
 
 const initialState = {
   name: "",
@@ -17,29 +18,28 @@ export const Contact = (props) => {
   };
   const clearState = () => setState({ ...initialState });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(name, phone, message);
 
-    emailjs
-      .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
-        e.target,
-        "YOUR_PUBLIC_KEY",
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          clearState();
-        },
-        (error) => {
-          console.log(error.text);
-        },
-      );
+    try {
+      const body = { Name: name, Mobile: phone, Query: message };
+      await sendEmail(body);
+    } catch (error) {
+      clearState();
+    }
   };
   return (
     <div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.5091956739916!2d85.03588097485131!3d25.621220514396754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed57db1b619223%3A0xd9fd80c9e6888f97!2sSinTheta%20Library%20and%20Self%20Study%20Zone!5e0!3m2!1sen!2sin!4v1743069646697!5m2!1sen!2sin"
+        width={"100%"}
+        height="600"
+        style={{ border: 0 }}
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
       <div id="contact">
         <div className="container">
           <div className="col-md-8">
@@ -156,16 +156,6 @@ export const Contact = (props) => {
           </div>
         </div>
       </div>
-      {/* <div id="footer">
-        <div className="container text-center">
-          <p>
-            &copy; 2023 Issaaf Kattan React Land Page Template. Design by{" "}
-            <a href="http://www.templatewire.com" rel="nofollow">
-              TemplateWire
-            </a>
-          </p>
-        </div>
-      </div> */}
     </div>
   );
 };

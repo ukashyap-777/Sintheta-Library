@@ -1,21 +1,27 @@
 {
+  "Navigation": {
+    "title": "Sintheta Logo",
+    "img": "img/sintheta-logo.jpg"
+  },
   "Header": {
-    "title": "We are a Landing Page",
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
+    "title": "Library And Self Study Zone",
+    "paragraph": "A peaceful haven for students and book lovers! 🌱✨ Enjoy a quiet study space, a vast collection of books, and a motivating environment to fuel your learning. Join us at SinTheta Library and elevate your study game! 📖💡"
   },
   "About": {
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "paragraph": "Welcome you to SinTheta Library, a space dedicated to fostering knowledge, focus, and growth. Established in January 2025, our library was founded by 3 passionate software engineers who envisioned a place where students and book lovers could thrive in a distraction-free environment. Driven by our desire to give back to society, we created SinTheta Library to offer a comfortable, well-equipped, and affordable study space for learners of all backgrounds. Whether you're preparing for exams, working on projects, or simply indulging in the joy of reading, our library is designed to support your journey.",
     "Why": [
-      "Lorem ipsum dolor",
-      "Tempor incididunt",
-      "Lorem ipsum dolor",
-      "Incididunt ut labore"
+      "Power Backup",
+      "Fully Air-Conditioned",
+      "Locker on Demand",
+      "Reserved Seat For Girls",
+      "RO Water"
     ],
     "Why2": [
-      "Aliquip ex ea commodo",
-      "Lorem ipsum dolor",
-      "Exercitation ullamco",
-      "Lorem ipsum dolor"
+      "Discussion Room",
+      "Parking",
+      "Power Point and LED for each cabin",
+      "CCTV",
+      "Hi-Speed Wi-Fi"
     ]
   },
   "Gallery": [
@@ -67,34 +73,59 @@
   ],
   "Services": [
     {
-      "icon": "fa fa-wordpress",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-plug",
+      "name": "Power Backup",
+      "text": "Your perfect study space with 24/7 power backup for uninterrupted learning!"
     },
     {
-      "icon": "fa fa-cart-arrow-down",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-fire",
+      "name": "Fully Air-Conditioned",
+      "text": "Your perfect study space, fully air-conditioned for a comfortable learning experience!"
     },
     {
-      "icon": "fa fa-cloud-download",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-users",
+      "name": "Discussion Room",
+      "text": "Featuring a dedicated discussion room for group studies and collaborative learning!"
     },
     {
-      "icon": "fa fa-language",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-unlock-alt",
+      "name": "Locker on Demand",
+      "text": "Secure your belongings with our Locker on Demand service for a hassle-free study experience!"
     },
     {
-      "icon": "fa fa-plane",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-female",
+      "name": "Reserved Seat for Girls",
+      "text": "Providing a reserved seating area for girls for a safe and comfortable study environment!"
     },
     {
-      "icon": "fa fa-pie-chart",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-motorcycle",
+      "name": "Parking",
+      "text": "Convenient parking facility for a stress-free visit!"
+    },
+    {
+      "icon": "fa fa-lightbulb-o",
+      "name": "Power Socket and LED",
+      "text": "Each cabin equipped with a power socket and LED light for a seamless study experience!"
+    },
+    {
+      "icon": "fa fa-shield",
+      "name": "CCTV Cameras",
+      "text": "Ensuring safety with 24/7 CCTV surveillance for a secure study environment!"
+    },
+    {
+      "icon": "fa fa-tint",
+      "name": "RO Water",
+      "text": "Stay refreshed with clean and safe RO drinking water!"
+    },
+    {
+      "icon": "fa fa-wifi",
+      "name": "Hi-Speed Wi-Fi",
+      "text": "Stay connected with high-speed Wi-Fi for seamless learning!"
+    },
+    {
+      "icon": "fa fa-scissors",
+      "name": "Stationery And Xerox",
+      "text": "Your one-stop study hub with stationery and Xerox services available!"
     }
   ],
   "Testimonials": [
@@ -131,54 +162,48 @@
   ],
   "Team": [
     {
-      "img": "img/team/01.jpg",
-      "name": "John Doe",
-      "job": "Director"
+      "img": "img/team/01.png",
+      "name": "Er. Manas Panigrahi",
+      "job": "Co-Founder"
     },
     {
-      "img": "img/team/02.jpg",
-      "name": "Mike Doe",
-      "job": "Senior Designer"
+      "img": "img/team/02.png",
+      "name": "Er. Alok Kumar",
+      "job": "Co-Founder"
     },
     {
-      "img": "img/team/03.jpg",
-      "name": "Jane Doe",
-      "job": "Senior Designer"
-    },
-    {
-      "img": "img/team/04.jpg",
-      "name": "Karen Doe",
-      "job": "Project Manager"
+      "img": "img/team/03.png",
+      "name": "Er. Utkarsh Kashyap",
+      "job": "Co-Founder"
     }
   ],
   "Contact": {
-    "address": "4321 California St, San Francisco, CA 12345 ",
-    "phone": "+1 123 456 1234",
-    "email": "info@company.com",
-    "facebook": "fb.com",
-    "twitter": "twitter.com",
-    "youtube": "youtube.com"
+    "address": "H No - 287, Akash Palace, New Mainpura, Pragati Nagar, Behind Hi-Tech Hospital, Saguna More, Danapur, Patna - 801503",
+    "phone": "+91 9097352277",
+    "email": "contact@sintheta.in",
+    "facebook": "https://www.fb.com",
+    "instagram": "https://www.instagram.com/sintheta_in"
   },
   "Features": [
     {
-      "icon": "fa fa-comments-o",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "fa fa-plug",
+      "title": "Power backup",
+      "text": "Your perfect study space with 24/7 power backup for uninterrupted learning!"
     },
     {
-      "icon": "fa fa-bullhorn",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "fa fa-fire",
+      "title": "Fully Air-Conditioned",
+      "text": "Your perfect study space, fully air-conditioned for a comfortable learning experience!"
     },
     {
-      "icon": "fa fa-group",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "fa fa-users",
+      "title": "Discussion Room",
+      "text": "Featuring a dedicated discussion room for group studies and collaborative learning!"
     },
     {
-      "icon": "fa fa-magic",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "fa fa-female",
+      "title": "Reserved Seat for Girls",
+      "text": " Providing a reserved seating area for girls for a safe and comfortable study environment!"
     }
   ]
 }

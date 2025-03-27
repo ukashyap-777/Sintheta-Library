@@ -1,30 +1,33 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
 import React from "react";
+import PhoneInput from "react-phone-input-2";
 
 const initialState = {
   name: "",
-  email: "",
+  phone: "",
   message: "",
 };
 export const Contact = (props) => {
-  const [{ name, email, message }, setState] = useState(initialState);
+  const [{ name, phone, message }, setState] = useState(initialState);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setState((prevState) => ({ ...prevState, [name]: value }));
   };
   const clearState = () => setState({ ...initialState });
-  
-  
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(name, email, message);
-    
-    {/* replace below with your own Service ID, Template ID and Public Key from your EmailJS account */ }
-    
+    console.log(name, phone, message);
+
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_PUBLIC_KEY")
+      .sendForm(
+        "YOUR_SERVICE_ID",
+        "YOUR_TEMPLATE_ID",
+        e.target,
+        "YOUR_PUBLIC_KEY",
+      )
       .then(
         (result) => {
           console.log(result.text);
@@ -32,7 +35,7 @@ export const Contact = (props) => {
         },
         (error) => {
           console.log(error.text);
-        }
+        },
       );
   };
   return (
@@ -66,14 +69,14 @@ export const Contact = (props) => {
                   </div>
                   <div className="col-md-6">
                     <div className="form-group">
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        className="form-control"
-                        placeholder="Email"
-                        required
-                        onChange={handleChange}
+                      <PhoneInput
+                        onlyCountries={["in"]}
+                        country={"in"}
+                        value={phone}
+                        name={"phone"}
+                        onChange={(phone) =>
+                          setState((prevState) => ({ ...prevState, phone }))
+                        }
                       />
                       <p className="help-block text-danger"></p>
                     </div>
@@ -93,7 +96,7 @@ export const Contact = (props) => {
                 </div>
                 <div id="success"></div>
                 <button type="submit" className="btn btn-custom btn-lg">
-                  Send Message
+                  Send Query
                 </button>
               </form>
             </div>
@@ -130,18 +133,21 @@ export const Contact = (props) => {
               <div className="social">
                 <ul>
                   <li>
-                    <a href={props.data ? props.data.facebook : "/"}>
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href={props.data ? props.data.instagram : "/"}
+                    >
+                      <i className="fa fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href={props.data ? props.data.facebook : "/"}
+                    >
                       <i className="fa fa-facebook"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href={props.data ? props.data.twitter : "/"}>
-                      <i className="fa fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href={props.data ? props.data.youtube : "/"}>
-                      <i className="fa fa-youtube"></i>
                     </a>
                   </li>
                 </ul>
@@ -150,7 +156,7 @@ export const Contact = (props) => {
           </div>
         </div>
       </div>
-      <div id="footer">
+      {/* <div id="footer">
         <div className="container text-center">
           <p>
             &copy; 2023 Issaaf Kattan React Land Page Template. Design by{" "}
@@ -159,7 +165,7 @@ export const Contact = (props) => {
             </a>
           </p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

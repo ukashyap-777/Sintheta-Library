@@ -370,7 +370,6 @@ header .intro-text {
 }
 .hover-bg .hover-text {
   position: absolute;
-  text-align: center;
   margin: 0 auto;
   color: #fff;
   background: linear-gradient(
@@ -378,7 +377,9 @@ header .intro-text {
     rgba(99, 114, 255, 0.8) 0%,
     rgba(92, 169, 251, 0.8) 100%
   );
-  padding: 30% 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   width: 100%;
   opacity: 0;
